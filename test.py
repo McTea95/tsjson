@@ -18,7 +18,7 @@ data = json.load(f)
 
 
 while True:
-    eingabe = (input("Bitte gebe alter oder Kontostand ein:\nquit um abzubrechen.\n"))
+    eingabe = (input("\nBitte gebe alter oder Kontostand ein:\nquit um abzubrechen.\n"))
     if eingabe == "quit":
         print("Programm wird beendet...")
         break
@@ -32,7 +32,7 @@ while True:
         for i in data: 
             balance.append(i["balance"]) #append the json file into the array
 
-        highst = balance[0] #helping variblg to save the highst value
+        highst = "0" #helping variblg to save the highst value
 
         for number in balance: #sorting
             if number > highst:
